@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./dist/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
+  <title>Real Estate Layout</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="grid">
+    <nav class="nav">
+      <input type="checkbox" name="" id="nav__hamburger-menu" class="nav__hamburger-menu" hidden>
+      <label for="nav__hamburger-menu" class="nav__hamburger-icon is-mobile">
+        <span></span>
+        <span></span>
+      </label>
+      <div class="nav__hamburger-logo is-mobile">
+        <img src="./dist/img/logo-vhome.svg" alt="Logo">
+      </div>
+      <div class="nav__main">
+        <div class="nav__mobile-logo">
+          <img src="./dist/img/logo-vhome.svg" alt="Logo">
+        </div>
+        <ul class="nav__main-items">
+          <li><a href="#">Trang chủ</a></li>
+          <li><a href="#">Dự án</a></li>
+          <li><a href="#">Chủ đầu tư</a></li>
+          <li><a href="#">Tin tức</a></li>
+          <li><a href="#">Liên hệ</a></li>
+          <li class="nav__login--desktop"><a href="#"><i class="fas fa-user"></i>Đăng ký</a></li>
+        </ul>
+        <ul class="nav__main-policy is-mobile">
+          <li><a href="#">Điều khoản sử dụng</a></li>
+          <li><a href="#">Chính sách bảo mật</a></li>
+        </ul>
+        
+        <label for="nav__hamburger-menu" class="nav__main--close is-mobile">
+          <i class="fas fa-times"></i>
+        </label>
+      </div>
+      <label for="nav__hamburger-menu" class="nav__overlay-hamburger"></label>
+      <div class="nav__login is-mobile">
+        <i class="fas fa-user"></i>
+      </div>
+    </nav>
+  </header>
+  <!-- Search -->
+  <section class="grid container search">
+    <div class="row search__card">
+      <div class="col col-12 col-md-6 search__quick">
+        <div class="search__title">
+          <p>Tìm kiếm nhanh dự án, chủ đầu tư</p>
+        </div>
+        <form action="#">
+          <div class="search__box">
+            <input type="text" name="keywords" id="" placeholder="Nhập từ khóa">
+            <button type="submit">Tìm kiếm</button>
+          </div>
+        </form>
+      </div>
+      <div class="col col-12 col-md-6 search_advance">
+        <div class="search__title">
+          <p>Tìm theo bộ lọc</p>
+          <i class="fas fa-chevron-up"></i>
+        </div>
+        <div class="search_box">
+          <form action="#">
+            <div class="group-control">
+              <select name="project_type">
+                <option value="">Tất cả loại dự án</option>
+                <option value="">Biệt thự</option>
+                <option value="">Nhà phố</option>
+                <option value="">Căn hộ</option>
+              </select>
+            </div>
+            <div class="group-control">
+              <select name="company_search">
+                <option value="">Tất cả loại dự án</option>
+                <option value="">Biệt thự</option>
+                <option value="">Nhà phố</option>
+                <option value="">Căn hộ</option>
+              </select>
+            </div>
+            <div class="group-control">
+              <select name="project_local">
+                <option value="">Tất cả loại dự án</option>
+                <option value="">Biệt thự</option>
+                <option value="">Nhà phố</option>
+                <option value="">Căn hộ</option>
+              </select>
+            </div>
+            <button type="submit">Tìm kiếm</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+
+  </footer>
+</body>
+
+</html>
